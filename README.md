@@ -10,11 +10,14 @@ Generates a random password based on certain criteria a user chooses.
 A window prompt asks for password criteria and genrates a password based on the users answers to window prompts. 
 
 ## Built with 
-*HTML
-*CSS
-*javaScript
+* HTML
+* CSS
+* JavaScript
 
 ## Website 
 https://bridgetvon.github.io/js-password-generator/
 
-![] (webpage.png)
+## Password home page 
+
+https://raw.github.com/bridgetvon/js-password-generator/blob/main/webpage.png
+

@@ -10,7 +10,7 @@ function generatePassword() {
   // Let user know password criteria 
 var passwordCriteria = window.confirm ("Do you want this password to have capitals?");
 var passwordChar= confirm("Do you want this password to have special characters?");
-var numbers = confirm("Do you want this password to have numbers");
+var numerics = confirm("Do you want this password to have numbers");
 var passwordLower = confirm("Do you want this password to have lower case?");
 
 
@@ -20,8 +20,9 @@ var passwordLength = window.prompt("Passowrds must be between 8 and 128 characte
 if (passwordLength > 8 && passwordLength < 128) {
 } else {
   window.alert("You must pick a number between 8 and 128!");
+  return (window.alert("Retry with a password between 8 and 128 characters."));
 };
-// ^ make sure that you fix this so they retry with new number 
+
   
 
 
@@ -30,7 +31,7 @@ if (passwordLength > 8 && passwordLength < 128) {
 // Get references to the #generate element
 var string=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 //var stringUpper= string.toUpperCase();
-var numeric=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var numeric=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialCharacters= ["!","@","$","&","^","*"];
 var myArray = [];
 var characters = [];
@@ -56,11 +57,12 @@ if (passwordChar == true) {
   complete = characters[0].concat(specialCharacters);
 };
 
-if (numeric == true) {
+if (numerics == true) {
   var randomIndex = Math.floor(Math.random() * numeric.length);
   myArray.push(numeric[randomIndex]);
   if (characters.length == 0){
     characters.push(numeric)
+    complete = characters[0];
     
   };
   complete = complete.concat(numeric);
