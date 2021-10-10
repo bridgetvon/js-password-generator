@@ -19,5 +19,4 @@ https://bridgetvon.github.io/js-password-generator/
 
 ## Password home page 
 
-https://raw.github.com/bridgetvon/js-password-generator/blob/main/webpage.png
 
